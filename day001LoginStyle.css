@@ -1,0 +1,183 @@
+body {
+    background-color: darkgray;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.mainBox {
+    text-align: center;
+    background-image: url("file:///D:/CodeLion/week2/source/loginExercise1.png");
+    background-repeat: no-repeat;
+    background-size: 600px 750px;
+    width: 600px;
+    height: 750px;
+    position: absolute;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.mainBoxInside {
+    background-color: darkblue;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.loginBox {
+    position: absolute;
+    margin: 50px;
+    top: 20%;
+}
+
+.loginBoxInside {
+    color: rgba(175, 175, 175, 0.6);
+    position: relative;
+}
+
+.forgot {
+    position: relative;
+    white-space: nowrap;
+    left: 125px;
+    color: rgba(175, 175, 175, 0.6);
+}
+
+.return {
+    position: relative;
+    white-space: nowrap;
+    left: 25px;
+    color: rgba(175, 175, 175, 0.6);
+}
+
+.loginBoxInside ul li {
+    display: inline-block;
+    margin: 0px;
+    font-size: 20px;
+    float: left;
+    text-align: center;
+    height: 30px;
+    width: 100px;
+}
+
+.loginBoxInside [type="radio"] {
+    display: none;
+}
+
+.checkBox {
+    display: flex;
+    position: relative;
+    zoom: 1.5;
+    top: 10px;
+    left: 5px;
+}
+
+.tabCon label[for="keepsignedin"] {
+    position: relative;
+    top: -16px;
+    left: 35px;
+    white-space: nowrap;
+}
+
+.tabCon [type="checkbox"]:checked~.checkboxFont {
+    color: rgb(255, 255, 255);
+}
+
+.tabCon {
+    display: none;
+}
+
+.loginBoxInside label {
+    display: block;
+}
+
+input[id="keepsignedin"]:checked+label {
+    color: white;
+}
+
+.loginBoxInside [type="radio"]:checked~label {
+    text-decoration: underline;
+    color: white;
+    text-decoration-color: dodgerblue;
+}
+
+.loginBoxInside [type="radio"]:checked~.tabCon {
+    display: block;
+}
+
+.inputInfo {
+    position: relative;
+    width: 400px;
+    height: 50px;
+    opacity: 0.5;
+    border-radius: 50px;
+    border: none;
+    border-right: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+}
+
+.inputInfo2 {
+    position: relative;
+    width: 400px;
+    height: 50px;
+    opacity: 0.5;
+    border-radius: 50px;
+    border: none;
+    border-right: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    right: 100px;
+}
+
+.buttonInfo {
+    width: 400px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    border-right: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    color: white;
+    background-color: dodgerblue;
+}
+
+.buttonInfo2 {
+    position: relative;
+    width: 400px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    border-right: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    color: white;
+    background-color: dodgerblue;
+    right: 100px;
+}
+
+.menuInfo {
+    font-size: 15px;
+    font: bold;
+}
+
+.menuInfo2 {
+    position: relative;
+    font-size: 15px;
+    font: bold;
+    right: 100px;
+    white-space: nowrap;
+}
+
+.menuInfo3 {
+    position: relative;
+    font-size: 15px;
+    font: bold;
+    right: 90px;
+    white-space: nowrap;
+}
