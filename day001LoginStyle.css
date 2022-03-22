@@ -9,7 +9,7 @@ body {
 
 .mainBox {
     text-align: center;
-    background-image: url("file:///D:/CodeLion/week2/source/loginExercise1.png");
+    background-image: url(https://raw.githubusercontent.com/khadkamhn/day-01-login-form/master/img/bg.jpg);
     background-repeat: no-repeat;
     background-size: 600px 750px;
     width: 600px;
