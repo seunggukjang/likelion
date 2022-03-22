@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day001LoginForm</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
+    <script>
+        location.href = "#tab1";
+    </script>
+    <link rel="stylesheet" href="day001LoginStyle.css">
+</head>
+
+<body>
+    <div class="backgroundImg"></div>
+    <div class="mainBox">
+        <div class="mainBoxInside"></div>
+        <div class="loginBox">
+            <div class="loginBoxInside">
+                <ul>
+                    <li id="tab1" class="btnCon"> <input type="radio" name="tab_group" id="tabmenu1" checked="checked">
+                        <label for="tabmenu1">SIGN IN</label>
+                        <div class="tabCon">
+                            <div class="menuInfo">USERNAME</div>
+                            <input type="text" id="loginID" placeholder="ID" class="inputInfo">
+                            <div class="menuInfo">PASSWORD</div>
+                            <input type="password" id="loginPW" placeholder="PW" class="inputInfo">
+                            <input type="checkbox" id="keepsignedin" class="checkBox" />
+                            <label for="keepsignedin">
+                                <span style="font-size:18px; font:italic bold;" class="checkboxFont">Keep me Signed in
+                                </span>
+                            </label>
+                            <button id="singupButton" onclick="location.href='file:///D:/CodeLion/week2/Login.html'" type="button" class="buttonInfo">SIGN IN</button>
+                            <br/>
+                            <hr style="border: solid 20px rgba(255, 255, 255, 0);">
+                            <hr style="border: solid 3px while; opacity: 0.5; width: 400px;">
+                            <hr style="border: solid 20px rgba(255, 255, 255, 0);">
+                            <p>
+                                <a href="#" title="Cannot access" style="text-decoration-line: none;"><span class="forgot">Forgot Password?</span></a>
+                            </p>
+                        </div>
+                    </li>
+                    <li id="tab2" class="btnCon "><input type="radio" name="tab_group" id="tabmenu2">
+                        <label for="tabmenu2">SIGN UP</label>
+                        <div class="tabCon ">
+                            <div class="menuInfo2">USERNAME</div>
+                            <input type="text" id="loginID2" placeholder="ID" class="inputInfo2">
+                            <div class="menuInfo2">PASSWORD</div>
+                            <input type="password" id="loginPW2" placeholder="PW" class="inputInfo2">
+                            <div class="menuInfo3">REPEAT PASSWORD</div>
+                            <input type="text" id="signupPW" placeholder="PW" class="inputInfo2">
+                            <div class="menuInfo3">EMAIL ADDRESS</div>
+                            <input type="password" id="signupEmail" placeholder="E-mail" class="inputInfo2">
+                            <br/>
+                            <br/>
+                            <button id="singupButton2" onclick="location.href='file:///D:/CodeLion/week2/Login.html'" type="button" class="buttonInfo2">SIGN UP</button>
+                            <hr style="border: solid 5px rgba(255, 255, 255, 0);  ">
+                            <hr style="right: 100px; position:relative; border: solid 3px while; opacity: 0.5; width: 400px;">
+                            <hr style="border: solid 5px rgba(255, 255, 255, 0);">
+                            <p>
+                                <a href="file:///D:/CodeLion/week2/LoginMain.html" title="ReturnToHome" style="text-decoration-line: none;"><span class="return">Already Member?</span></a>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
