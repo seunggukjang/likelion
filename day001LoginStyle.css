@@ -108,12 +108,12 @@ input[id="keepsignedin"]:checked+label {
 
 .inputInfo {
     position: relative;
-    padding: 10px;
-    font-size: x-large;
-    padding-left: 40px;
-    padding-right: 40px;
-    width: 320px;
-    height: 50px;
+    padding: 5px;
+    font-size: x-small;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 380px;
+    height: 20px;
     opacity: 0.5;
     border-radius: 50px;
     border: none;
