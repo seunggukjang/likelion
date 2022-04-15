@@ -58,14 +58,25 @@ document.getElementById().innerHTML = "My First JavaScript"
 <script src="https://www.w3schools.com/js/myScript.js"></script>
 ```
 * URL을 이용해서 혹은 파일의 경로 혹은 경로없이 외부스크립트를 참조할 수 있다.
-# JavaScript Tutorial
 ## JavaScript Output
-* innerHTML : HTML 요소안에 쓰기
-* document.write() : HTML 에서 write 파라미터의 결과를 보여준다. HTML output안에 쓰기
+1. innerHTML : HTML 요소안에 쓰기 
+2. document.write() : HTML 에서 write 파라미터의 결과를 보여준다. 
+HTML output안에 쓰기
 <details><summary>document.write() 단점
 </summary>
  HTML 문서가 로드가 완료되고 document.wirte()를 호출하면 모든 로드된 HTML 데이터가  덮어 쓰여진다. 따라서 디버그 용도로 쓰여진다.
 </details>
+3. window.alert() : 브라우저의 알림 박스에 쓰기
+<details>
+<summary>window keyword
+</summary>
+window는 global 범위 객체다. 즉, 모든 변수, 속성 과 매소드는 디폴트로 윈도우 객체에 속해 있기에 윈도우 키워드는 생략이 가능하다.
 
-* window.alert() : 브라우저의 알림 박스에 쓰기
-* console.log() : 브라우저 콘솔에 쓰기
+```html
+<script>
+alert(5 + 6);
+</script>
+```
+</details>
+4. console.log() : 브라우저 콘솔에 쓰기
+5. window.print() : 현재 윈도우를 실제로 프린터에서 프린트하기
