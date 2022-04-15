@@ -277,3 +277,8 @@ html += `</ul>`;
 document.getElementById("demo").innerHTML = html;
 </script>
 ```
+## JavaScript Numbers
+ * Number들은 항상 64-bit Floating Point이다.
+ * "Number"로 변수를 정의해도 연산을 통해 나온 결과가 Number처럼 연산 후 String으로 나온다.
+## JavaScript Number Methods
+## JavaScript Arrays
