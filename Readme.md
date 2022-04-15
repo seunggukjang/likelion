@@ -19,3 +19,10 @@
 1. 웹 페이지에 무엇이 있는가?
 > 1. BOM : Browser Ojbect Model
 > > Object Model은 객체 지향
+
+
+# HTML/CSS/Javascript
+ 웹 프로그래밍에서 프론트 엔드는 Browser Engine과 각종 API를 이용하여 HTML Document를 꾸민다. 
+# HTML : Hyper Text Markup Language
+ Hyper Text : 다른 문서로 넘어갈 수 있는 문서
+ Markup :  
