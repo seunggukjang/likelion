@@ -80,3 +80,39 @@ alert(5 + 6);
 </details>
 4. console.log() : 브라우저 콘솔에 쓰기
 5. window.print() : 현재 윈도우를 실제로 프린터에서 프린트하기
+## JavaScript Statements
+## JavaScript Syntax
+## JavaScript Comments
+## JavaScript Variables
+ * var : 재선언 가능
+ * let
+ * const
+## JavaScript Let
+
+
+| | let | var |
+| --- | --- | --- |
+| block scope | O | X |
+| Redeclaring | *scope로 감싸있어야 가능 | 아무때나 가능 |
+| *Hoisting | X | O |
+>  scope로 감싸있기 예시 
+```js
+ let x = 2;    // Allowed
+{
+let x = 3;    // Allowed
+}
+
+{
+let x = 4;    // Allowed
+}
+```
+> Hoisting 예시
+```js
+carName = "Volvo";
+var carName;
+```
+```js
+carName = "Saab";// Error
+let carName = "Volvo";
+```
+
