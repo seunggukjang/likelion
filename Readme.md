@@ -26,3 +26,35 @@
 # HTML : Hyper Text Markup Language
  Hyper Text : 다른 문서로 넘어갈 수 있는 문서
  Markup :  
+ 
+ # JavaScript Tutorial
+## JS Introduction
+
+ * document.getElementById().innerHTML : DOM의 최상위 객체인 document를 불러와 ()안의 ID를 가진 요소를 찾는다.
+ 이 때, 요소가 가진 tag의 속성을 이용할 수 있다.
+```html
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+document.getElementById("demo").style.display = "none";
+```
+* onclick은 이벤트 핸들러이다.(아마도 이게 함수형 언어일듯 하다.)
+
+## JS Where To
+1. HTML 내부에 넣기
+```html
+<script>
+document.getElementById().innerHTML = "My First JavaScript"
+</script>
+```
+* HTML 안에서 ```<script>``` 태그를 이용해 ```<head>``` 혹은 ```<body>```에  JS code를 넣을 수 있다.
+* 옛날 방식에서 타입 속성으로 JS를 지정했지만 HTML에선 JS가 디폴트 스크립트 언어이기에 더 이상 타입속성이 필요하지 않다.<br>
+```<script type="text/javascript">```
+스크립트 해석기의 속도가 느려```<body>```의 아래에 두는 것이 문서를 더 빨리보여준다.
+2. HTML 외부에 넣기
+```<script src="myScript.js"></script>```
+```src```를 이용하여 외부 스크립트를 사용할 수 있다.
+* 외부 스크립트의 장점은 HTML와 code를 분리 할 수 있고 가독이 좋아진다. 또한 JavaScript파일을 캐시를 통해 페이지 로드의 속도가 빨라진다.
+```html
+<script src="https://www.w3schools.com/js/myScript.js"></script>
+```
+* URL을 이용해서 혹은 파일의 경로 혹은 경로없이 외부스크립트를 참조할 수 있다.
