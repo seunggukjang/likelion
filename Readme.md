@@ -204,3 +204,76 @@ const person = {
   }
 };
 ```
+## JavaScript Events
+## JavaScript Strings
+ * String length가 있다.
+```js
+let x = new String("John");
+let y = new String("John");
+```
+ * 위의 두 String을 ===로 비교했을 때, false로 나온다. JavaScript object를 비교하면 항상 false가 나온다.
+## JavaScript String Methods
+ * length : String의 크기를 준다.
+ * slice(start, end) : start 위치와 end위치외엔 자른다.
+ * substring(start, end) : slice와 유사하나 파라미터로 음수를 쓸 수 없다.
+ * substr(start, size) : start위치에서 size만큼외엔 자른다.
+ * replace(String1, String2) : String1을 String2로 바꾼다. 주로 `/i`를 사용한다. 모든 String1을 바꿀 때는 `/g`를 사용한다.
+```js
+let text = "Please visit Microsoft!";
+let newText = text.replace(/MICROSOFT/i, "W3Schools");
+
+let text = "Please visit Microsoft and Microsoft!";
+let newText = text.replace(/Microsoft/g, "W3Schools");
+```
+## JavaScript String Search
+## [JavaScript Template Literals](https://www.w3schools.com/js/js_string_templates.asp)
+ * ``를 사용해 표현한다.
+ * interpolation
+```js
+${...}
+```
+```html
+<h2>JavaScript Template Literals</h2>
+
+<p>Template literals allows variables in strings:</p>
+
+<p id="demo"></p>
+
+<p>Template literals are not supported in Internet Explorer.</p>
+
+<script>
+let firstName = "John";
+let lastName = "Doe";
+
+let text = `Welcome ${firstName}, ${lastName}!`;
+
+document.getElementById("demo").innerHTML = text;
+</script>
+```
+```js
+let price = 10;
+let VAT = 0.25;
+
+let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
+```
+```html
+<p>Template literals allows variables in strings:</p>
+
+<p id="demo"></p>
+
+<p>Template literals are not supported in Internet Explorer.</p>
+
+<script>
+let header = "Templates Literals";
+let tags = ["template literals", "javascript", "es6"];
+
+let html = `<h2>${header}</h2><ul>`;
+
+for (const x of tags) {
+  html += `<li>${x}</li>`;
+}
+
+html += `</ul>`;
+document.getElementById("demo").innerHTML = html;
+</script>
+```
