@@ -58,3 +58,14 @@ document.getElementById().innerHTML = "My First JavaScript"
 <script src="https://www.w3schools.com/js/myScript.js"></script>
 ```
 * URL을 이용해서 혹은 파일의 경로 혹은 경로없이 외부스크립트를 참조할 수 있다.
+# JavaScript Tutorial
+## JavaScript Output
+* innerHTML : HTML 요소안에 쓰기
+* document.write() : HTML 에서 write 파라미터의 결과를 보여준다. HTML output안에 쓰기
+<details><summary>document.write() 단점
+</summary>
+ HTML 문서가 로드가 완료되고 document.wirte()를 호출하면 모든 로드된 HTML 데이터가  덮어 쓰여진다. 따라서 디버그 용도로 쓰여진다.
+</details>
+
+* window.alert() : 브라우저의 알림 박스에 쓰기
+* console.log() : 브라우저 콘솔에 쓰기
