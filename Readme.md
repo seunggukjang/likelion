@@ -183,3 +183,24 @@ person.firstName + " is " + person.age + " years old.";
 ```js
 car = undefined;    // Value is undefined, type is undefined
 ```
+## JavaScript Functions
+ * Function Invocation : invoke란 call를 뜻하는 것이고 함수는 event가 발생하거나 JavaScript에서 호출되거나 스스로 호출했을 때 실행된다.
+ * [() operator가 함수를 호출한다. 함수의 이름은 함수 객체를 지칭한다.](https://www.w3schools.com/js/tryit.asp?filename=tryjs_farenheit_to_celsius_2)
+```js
+function toCelsius(fahrenheit) {
+  return (5/9) * (fahrenheit-32);
+}
+document.getElementById("demo").innerHTML = toCelsius;
+```
+## JavaScript Object
+ * Object는 class 객체처럼 사용한다. 그리고 주로 const를 이용하여 정의하며 Object 내의 함수도 맴버 변수에 함수를 할당하는 것과 유사하다.
+```js
+const person = {
+  firstName: "John",
+  lastName : "Doe",
+  id       : 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+```
