@@ -115,4 +115,71 @@ var carName;
 carName = "Saab";// Error
 let carName = "Volvo";
 ```
+## JavaScript Const
+const  
+1. 재할당 불가능하고 정의만 가능하다.
+근데 배열이나 객체의 속성을 바꿀 수 있다.
+2. 예시
+```js
+const cars = ["Saab", "Volvo", "BMW"];
 
+// You can change an element:
+cars[0] = "Toyota";
+
+// You can add an element:
+cars.push("Audi");
+```
+```js
+const cars = ["Saab", "Volvo", "BMW"];
+
+cars = ["Toyota", "Volvo", "Audi"];    // ERROR
+```
+3. Hoisting 불가능하며 다른 타입으로 재선언 불가능하다. block scope로 구분지으면 같은 이름으로 새로운 const변수를 만들수 있다.
+
+## JavaScript Operators
+ * `**`은 지수다
+ * `===`은 값과 타입이 같은 지 확인한다.
+ * `!==`은 값 또는 타입이 다른 지 확인한다.
+ * `instanceof`는 왼쪽의 인스턴스가 오른쪽의 클래스로 형변환이 가능하면 true를 반환한다.
+## JavaScript Arithmetic
+## JavaScript Assignment
+## JavaScript Data Types
+ * [Javascript는 숫자와 string을 합산하면 숫자를 string으로 변환시킨다. 그런데 좌에서 우로 해석하므로 숫자 + 숫자 + string이면 합산한 수를 string으로 바꾸로, string + 숫자 + 숫자면 숫자를 string으로 변환시켜 string+ string + string이 된다.](https://www.w3schools.com/js/tryit.asp?filename=tryjs_datatypes_addstring)
+```html
+<script>
+let x = 16 + "Volvo";
+document.getElementById("demo").innerHTML = x;
+</script>
+```
+ * 변수의 형변환이 동적이다.
+```js
+let x;           // Now x is undefined
+x = 5;           // Now x is a Number
+x = "John";      // Now x is a String
+```
+ * string 정의 시, 따옴표를 넣을 수 있다.
+```js
+let answer1 = "It's alright";             // Single quote inside double quotes
+let answer2 = "He is called 'Johnny'";    // Single quotes inside double quotes
+let answer3 = 'He is called "Johnny"';    // Double quotes inside single quotes
+```
+ * `{}`를 이용해서 object를 정의할 수 있다. struct라고 생각하면 된다.
+```html
+<p id="demo"></p>
+
+<script>
+const person = {
+  firstName : "John",
+  lastName  : "Doe",
+  age     : 50,
+  eyeColor  : "blue"
+};
+
+document.getElementById("demo").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+</script>
+```
+* undefined라는 것이 있다.
+```js
+car = undefined;    // Value is undefined, type is undefined
+```
