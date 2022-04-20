@@ -280,5 +280,95 @@ document.getElementById("demo").innerHTML = html;
 ## JavaScript Numbers
  * Number들은 항상 64-bit Floating Point이다.
  * "Number"로 변수를 정의해도 연산을 통해 나온 결과가 Number처럼 연산 후 String으로 나온다.
+ * 
 ## JavaScript Number Methods
 ## JavaScript Arrays
+## JavaScript Array Methods
+## JavaScript Sorting Arrays
+## JavaScript Array Iteration
+* JavaScript Array forEach() : array.forEach(functionName)으로 함수 정의에 있는 파라미터의 value가 배열의 원소이다.
+```js
+const numbers = [45, 4, 9, 16, 25];
+let txt = "";
+numbers.forEach(myFunction);
+
+function myFunction(value, index, array) {
+  txt += value + "<br>";
+}
+function myFunction(value) {
+  txt += value + "<br>";
+}
+```
+* JavaScript Array map() : forEach()는 배열의 값을 바꿀 수 있지만 map은 바꾸지 않는다.
+```js
+const numbers1 = [45, 4, 9, 16, 25];
+const numbers2 = numbers1.map(myFunction);
+
+function myFunction(value, index, array) {
+  return value * 2;
+function myFunction(value) {
+  return value * 2;
+}}
+```
+
+## JavaScript Array Const
+## JavaScript Date Objects
+* JavaScript Date Output : 브라우저가 가진 시간영역(time zone)을 보여준다
+* Creating Date Objects  : new 키워드 이용
+## JavaScript Date Formats
+## JavaScript Get Date Methods
+## JavaScript Set Date Methods
+## JavaScript Math Object
+## JavaScript Random
+## JavaScript Booleans
+## JavaScript Comparison and Logical Operators
+## JavaScript if, else, and else if
+## JavaScript Switch Statement
+## JavaScript For Loop
+## JavaScript For In
+* c#의 for in과 다르게 인덱스를 이용한다.
+```js
+const person = {fname:"John", lname:"Doe", age:25};
+
+let text = "";
+for (let x in person) {
+  text += person[x];
+}
+```
+## JavaScript For Of
+* c#의 for in과 유사
+```js
+const cars = ["BMW", "Volvo", "Mini"];
+
+let text = "";
+for (let x of cars) {
+  text += x;
+}
+```
+## JavaScript While Loop
+## JavaScript Break and Continue
+## JavaScript Iterables
+* for of에 대한 설명
+## JavaScript Sets
+* c++의 std::vector와 유사함
+* value() : iterator 이용방법
+```js
+let text = "";
+for (const x of letters.values()) {
+  text += x;
+}
+```
+## JavaScript Maps
+* c++ std::map과 유사
+* entries()를 이용하여 iterator를 사용함
+```js
+let text = "";
+for (const x of fruits.entries()) {
+  text += x;
+}
+```
+## JavaScript typeof
+## JavaScript Type Conversion
+## JavaScript Bitwise Operations
+## JavaScript Regular Expressions
+## 
