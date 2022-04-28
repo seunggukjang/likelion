@@ -371,4 +371,38 @@ for (const x of fruits.entries()) {
 ## JavaScript Type Conversion
 ## JavaScript Bitwise Operations
 ## JavaScript Regular Expressions
-## 
+## JavaScript Errors
+```js
+
+function myFunction() {
+  const message = document.getElementById("p01");
+  message.innerHTML = "";
+  let x = document.getElementById("demo").value;
+  try {
+    if(x == "") throw "is empty";
+    if(isNaN(x)) throw "is not a number";
+    x = Number(x);
+    if(x > 10) throw "is too high";
+    if(x < 5) throw "is too low";
+  }
+  catch(err) {
+    message.innerHTML = "Error: " + err + ".";
+  }
+  finally {
+    document.getElementById("demo").value = "";
+  }
+}
+ 
+```
+## JavaScript Scope
+## JavaScript Hoisting
+## JavaScript Use Strict
+## The JavaScript this Keyword
+## JavaScript Arrow Function
+```js
+hello = () => {
+  return "Hello World!";
+}
+hello = val => "Hello " + val;
+```
+## JavaScript Classes
