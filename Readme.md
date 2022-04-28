@@ -406,3 +406,11 @@ hello = () => {
 hello = val => "Hello " + val;
 ```
 ## JavaScript Classes
+## JavaScript Modules
+## JavaScript JSON
+## JavaScript Debugging
+## JavaScript Style Guide
+## JavaScript Best Practices
+## JavaScript Common Mistakes
+## JavaScript Performance
+## JavaScript Reserved Words
