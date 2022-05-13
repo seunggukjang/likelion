@@ -7,35 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="stopwatch.js"></script>
     <script defer src="timer.js"></script>
+    <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
 
 <body>
     <h1>타이머와 스톱워치</h1>
-    <div>
-        <p id="TimerText">타이머 : </p>
-        <p id="Timer">00:00:00</p>
-    </div>
+    <div id="TimerClass" style="display:block;">
+        <div>
+            <p id="TimerText">타이머 : </p>
+            <p id="Timer">00:00:00</p>
+        </div>
 
-    <button type="button" onclick="AddOneHours()">+1 hour</button>
-    <button type="button" onclick="AddTenMin()">+10 min</button>
-    <button type="button" onclick="AddOneMin()">+1 min</button>
-    <button type="button" onclick="AddTenSec()">+10 sec</button>
-    <button type="button" onclick="AddOneSec()">+1 sec</button>
-    <button type="button" onclick="Start()">Start</button>
-    <div>
-        <p id="StopwatchText">스톱워치 : </p>
-        <p id="StopwatchTimer">00:00:00.00</p>
+        <button type="button" onclick="AddOneHours()">+1 hour</button>
+        <button type="button" onclick="AddTenMin()">+10 min</button>
+        <button type="button" onclick="AddOneMin()">+1 min</button>
+        <button type="button" onclick="AddTenSec()">+10 sec</button>
+        <button type="button" onclick="AddOneSec()">+1 sec</button>
+        <button type="button" onclick="Start()">Start</button>
     </div>
-
-    <button type="button" onclick="TurnPause()" id="PauseButton">Start</button>
-    <button type="button " onclick="RecordTimer()">Record</button>
-    <button type="button " onclick="ClearTimer()">Clear</button>
-    <div>
-        <p id="record"></p>
+    <div id="StopwatchClass" style="display:none;">
+        <div>
+            <p id="StopwatchText">스톱워치 : </p>
+            <p id="StopwatchTimer">00:00:00.00</p>
+        </div>
+        <button type="button" onclick="TurnPause()" id="PauseButton">Start</button>
+        <button type="button" onclick="RecordTimer()">Record</button>
+        <button type="button" onclick="ClearTimer()">Clear</button>
+        <div>
+            <p id="record"></p>
+        </div>
     </div>
-    <script>
-    </script>
+    <button type="button" onclick="ShowingTimer()">타이머</button>
+    <button type="button" onclick="ShowingStopwatch()">스톱워치</button>
 </body>
 
 </html>

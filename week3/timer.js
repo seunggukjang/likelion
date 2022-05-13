@@ -2,6 +2,7 @@ let timers = document.getElementById('Timer');
 let Hours = 0;
 let Mins = 0;
 let Sec = 0.00;
+let IsDisplayTimer = true;
 // let last = Date().now;
 
 // function Init() {
@@ -79,6 +80,16 @@ function GetTotalTime() {
     return totalTime;
 }
 
+function ShowingTimer() {
+    let timerDisplay = document.getElementById("TimerClass");
+    if (timerDisplay.style.display == 'none') {
+        timerDisplay.style.display = 'block';
+    }
+    let stopwatchDisplay = document.getElementById("StopwatchClass");
+    if (stopwatchDisplay.style.display == 'block') {
+        stopwatchDisplay.style.display = 'none';
+    }
+}
 
 function leadingZeros(n, digits) {
     let zero = '';

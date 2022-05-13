@@ -58,3 +58,14 @@ function leadingZeros(n, digits) {
     }
     return zero + n;
 }
+
+function ShowingStopwatch() {
+    let stopwatchDisplay = document.getElementById("StopwatchClass");
+    if (stopwatchDisplay.style.display == 'none') {
+        stopwatchDisplay.style.display = 'block';
+    }
+    let timerDisplay = document.getElementById("TimerClass");
+    if (timerDisplay.style.display == 'block') {
+        timerDisplay.style.display = 'none';
+    }
+}
