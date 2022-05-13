@@ -15,8 +15,8 @@
     <h1>타이머와 스톱워치</h1>
     <div id="TimerClass" style="display:block;">
         <div>
-            <p id="TimerText">타이머 : </p>
-            <p id="Timer">00:00:00</p>
+            <p id="TimerText" style="float:none">타이머 : </p>
+            <p id="Timer" style="float:none">00:00:00</p>
         </div>
 
         <button type="button" onclick="AddOneHours()">+1 hour</button>
@@ -28,8 +28,8 @@
     </div>
     <div id="StopwatchClass" style="display:none;">
         <div>
-            <p id="StopwatchText">스톱워치 : </p>
-            <p id="StopwatchTimer">00:00:00.00</p>
+            <p id="StopwatchText" style="float:none">스톱워치 : </p>
+            <p id="StopwatchTimer" style="float:none">00:00:00.00</p>
         </div>
         <button type="button" onclick="TurnPause()" id="PauseButton">Start</button>
         <button type="button" onclick="RecordTimer()">Record</button>
