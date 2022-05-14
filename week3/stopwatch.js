@@ -28,6 +28,10 @@ function TurnPause() {
 }
 
 function ClearTimer() {
+    sec = 0.00;
+    min = 0;
+    h = 0;
+    showingTimer(2);
     RecordList.innerHTML = "";
 }
 
@@ -45,7 +49,11 @@ function Timer() {
         currentTime = currentTime - (min * 60);
     }
     sec = currentTime.toFixed(2);
-    document.getElementById('StopwatchTimer').innerHTML = leadingZeros(h, 2) + ':' + leadingZeros(min, 2) + ':' + leadingZeros(sec, 5);
+    showingTimer(5);
+}
+
+function showingTimer(num) {
+    document.getElementById('StopwatchTimer').innerHTML = leadingZeros(h, 2) + ':' + leadingZeros(min, 2) + ':' + leadingZeros(sec, num);
 }
 
 function leadingZeros(n, digits) {
